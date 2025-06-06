@@ -127,7 +127,7 @@ El script `run.sh` orquesta las siguientes etapas principales. Se pueden ejecuta
 Después de un entrenamiento exitoso, los componentes necesarios (modelo acústico, grafo, configuración de i-vector, etc.) se pueden empaquetar en una estructura de directorio similar a los modelos Vosk oficiales para ser utilizados con la API de Vosk. Ver el script `empaquetar_modelo.sh`
 
 ## Flujo de trabajo resumido
-<img src="/home/draken/projects/kaldi/uml.png" width="250"/>
+<img src="uml.png" width="250"/>
 
 ## Resultados:
 
