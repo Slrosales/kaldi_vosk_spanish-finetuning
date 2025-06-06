@@ -8,14 +8,6 @@ data/lang_tmp/
 data/lang_test_*/
 data/local/tmp/
 
-# Archivos intermedios de lang_prep.sh que se regeneran
-data/local/dict/vocab_from_data_normalized.txt
-data/local/dict/lexicon_base_normalized.txt
-data/local/dict/oov_from_data.txt
-data/local/dict/combined_oov_for_g2p.txt
-data/local/dict/lexicon_g2p_output.txt
-data/local/dict/lexicon.txt.before_final_clean
-
 # Archivos y directorios de MFCC
 mfcc_output/
 # Si tienes otros directorios de características, añádelos (ej. mfcc_hires_pitch/)
