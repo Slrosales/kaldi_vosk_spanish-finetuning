@@ -3,10 +3,6 @@ exp/
 
 # Archivos y directorios de MFCC
 mfcc_output/
-# Si tienes otros directorios de características, añádelos (ej. mfcc_hires_pitch/)
-data/*/feats.scp
-data/*/cmvn.scp
-data/*/.backup/
 
 # Corpus descargados
 CorporaOpenSLR/ 
