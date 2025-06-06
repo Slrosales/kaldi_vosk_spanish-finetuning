@@ -1,0 +1,48 @@
+# Directorios de Kaldi generados
+exp/
+data/train/
+data/dev/
+data/test/
+data/lang/
+data/lang_tmp/
+data/lang_test_*/
+data/local/tmp/
+
+# Archivos intermedios de lang_prep.sh que se regeneran
+data/local/dict/vocab_from_data_normalized.txt
+data/local/dict/lexicon_base_normalized.txt
+data/local/dict/oov_from_data.txt
+data/local/dict/combined_oov_for_g2p.txt
+data/local/dict/lexicon_g2p_output.txt
+data/local/dict/lexicon.txt.before_final_clean
+
+# Archivos y directorios de MFCC
+mfcc_output/
+# Si tienes otros directorios de características, añádelos (ej. mfcc_hires_pitch/)
+data/*/feats.scp
+data/*/cmvn.scp
+data/*/.backup/
+
+# Corpus descargados
+CorporaOpenSLR/ 
+CorpusDimex100/
+
+# Modelos empaquetados y ZIPs (si los creas dentro de la receta)
+mi_modelo_vosk_final_wsl/
+*.zip
+
+# Archivos de Python compilados y caches
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Logs generales (los de Kaldi suelen estar en exp/)
+*.log
+
+# Entornos virtuales de Python (si creaste uno DENTRO de s5/)
+env/
+venv/
+*.venv/
+
