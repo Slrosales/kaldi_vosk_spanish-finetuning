@@ -1,12 +1,5 @@
 # Directorios de Kaldi generados
 exp/
-data/train/
-data/dev/
-data/test/
-data/lang/
-data/lang_tmp/
-data/lang_test_*/
-data/local/tmp/
 
 # Archivos y directorios de MFCC
 mfcc_output/
