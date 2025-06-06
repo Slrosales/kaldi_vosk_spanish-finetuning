@@ -1,20 +1,40 @@
 # Directorios de Kaldi generados
-exp/
+s5/exp/
+s5/data/train/
+s5/data/dev/
+s5/data/test/
+s5/data/lang/
+s5/data/lang_tmp/
+s5/data/lang_test_*/
+s5/data/local/tmp/
+
+# Archivos intermedios DENTRO de s5/data/local/dict/ que se regeneran
+s5/data/local/dict/vocab_from_data_normalized.txt
+s5/data/local/dict/words_in_base_lexicon.txt
+s5/data/local/dict/oov_from_data.txt
+s5/data/local/dict/combined_oov_for_g2p.txt
+s5/data/local/dict/combined_oov_for_g2p_sorted.txt 
+s5/data/local/dict/lexicon_g2p_output.txt
+s5/data/local/dict/lexicon.txt.before_final_clean
+s5/data/local/dict/all_spk2gender.tmp
+s5/data/local/dict/lexiconp.txt 
 
 # Archivos y directorios de MFCC
-mfcc_output/
+s5/mfcc_output/
+s5/data/*/feats.scp # El * aquí es para train/dev/test
+s5/data/*/cmvn.scp
+s5/data/*/.backup/
 
-# Corpus descargados
-CorporaOpenSLR/ 
-CorpusDimex100/
+# Corpus descargados (asumiendo que están dentro de s5/ o en una ruta que quieres ignorar)
+s5/CorporaOpenSLR/ 
 
-# Modelos empaquetados y ZIPs (si los creas dentro de la receta)
-mi_modelo_vosk_final_wsl/
-*.zip
+# Modelos empaquetados y ZIPs
+s5/mi_modelo_vosk_final_wsl/ # Si lo creas dentro de s5
+*.zip # Ignorar todos los zips, o ser más específico
 
-# Archivos de Python compilados y caches
+# Python
+**/__pycache__/
 *.pyc
-__pycache__/
 *.egg-info/
 dist/
 build/
